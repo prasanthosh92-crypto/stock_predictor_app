@@ -1,0 +1,15 @@
+{
+  "data_sources": {
+    "primary": "yfinance",
+    "backup": "alpha_vantage"
+  },
+  "models": {
+    "default": "random_forest",
+    "alternatives": ["linear_regression", "lstm"]
+  },
+  "database": {
+    "type": "sqlite",
+    "path": "data/models/stocks.db"
+  }
+}
+
