@@ -1,0 +1,15 @@
+# setup.py (in project root)
+from setuptools import setup, find_packages
+
+setup(
+    name="stock_predictor",
+    version="0.1.0",
+    packages=find_packages(),  # Will find stock_predictor/
+    install_requires=[
+        "yfinance>=0.2.0","pandas>=1.5.0","numpy>=1.21.0",
+        "scikit-learn>=1.1.0","matplotlib>=3.5.0","seaborn>=0.11.0",
+        "streamlit>=1.25.0","plotly>=5.0.0","requests>=2.28.0",
+        "ta>=0.10.0","pytest>=7.0.0"
+    ],
+)
+

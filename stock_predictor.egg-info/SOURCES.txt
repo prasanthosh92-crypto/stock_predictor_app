@@ -1,0 +1,15 @@
+README.md
+setup.py
+stock_predictor/__init__.py
+stock_predictor/data_collector.py
+stock_predictor/feature_engineer.py
+stock_predictor/predictor.py
+stock_predictor/utils.py
+stock_predictor.egg-info/PKG-INFO
+stock_predictor.egg-info/SOURCES.txt
+stock_predictor.egg-info/dependency_links.txt
+stock_predictor.egg-info/requires.txt
+stock_predictor.egg-info/top_level.txt
+tests/__init__.py
+tests/test_data_collector.py
+tests/test_feature_engineer.py

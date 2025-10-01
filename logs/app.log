@@ -1,0 +1,235 @@
+2025-10-01 21:53:20,519 INFO Starting analysis: AAPL (random_forest, 1y)
+2025-10-01 21:53:20,526 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 21:53:20,530 INFO Fetching 1y data for AAPL
+2025-10-01 21:53:20,877 INFO Cached 251 records for AAPL
+2025-10-01 21:53:20,878 INFO Collected 251 rows
+2025-10-01 21:53:20,879 INFO Data cleaned: 251 rows remain
+2025-10-01 21:53:20,881 INFO Lag features created: (1, 3, 5, 10)
+2025-10-01 21:53:20,883 INFO Return features created
+2025-10-01 21:53:20,884 INFO Volatility features created
+2025-10-01 21:53:20,884 INFO Final feature set assembled: 207 rows, 19 cols
+2025-10-01 21:53:20,884 INFO Engineered features: (207, 19)
+2025-10-01 21:53:20,974 INFO Model trained, test R2: 0.868
+2025-10-01 21:53:32,090 INFO Starting analysis: AAPL (linear_regression, 1y)
+2025-10-01 21:53:32,091 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 21:53:32,101 INFO Using cached data for AAPL
+2025-10-01 21:53:32,102 INFO Collected 251 rows
+2025-10-01 21:53:32,102 INFO Data cleaned: 251 rows remain
+2025-10-01 21:53:32,105 INFO Lag features created: (1, 3, 5, 10)
+2025-10-01 21:53:32,106 INFO Return features created
+2025-10-01 21:53:32,107 INFO Volatility features created
+2025-10-01 21:53:32,108 INFO Final feature set assembled: 207 rows, 17 cols
+2025-10-01 21:53:32,108 INFO Engineered features: (207, 17)
+2025-10-01 21:53:32,118 INFO Model trained, test R2: 0.866
+2025-10-01 21:54:39,132 INFO Starting analysis: RCOM.BO (linear_regression, 1y)
+2025-10-01 21:54:39,132 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 21:54:39,134 INFO Fetching 1y data for RCOM.BO
+2025-10-01 21:54:39,280 INFO Cached 130 records for RCOM.BO
+2025-10-01 21:54:39,280 INFO Collected 130 rows
+2025-10-01 21:54:39,280 INFO Data cleaned: 130 rows remain
+2025-10-01 21:54:39,282 INFO Lag features created: (1, 3, 5, 10)
+2025-10-01 21:54:39,284 INFO Return features created
+2025-10-01 21:54:39,285 INFO Volatility features created
+2025-10-01 21:54:39,285 INFO Final feature set assembled: 86 rows, 19 cols
+2025-10-01 21:54:39,285 INFO Engineered features: (86, 19)
+2025-10-01 21:54:39,291 INFO Model trained, test R2: -1.065
+2025-10-01 21:55:07,229 INFO Starting analysis: RCOM.BO (random_forest, 1y)
+2025-10-01 21:55:07,230 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 21:55:07,232 INFO Using cached data for RCOM.BO
+2025-10-01 21:55:07,233 INFO Collected 130 rows
+2025-10-01 21:55:07,234 INFO Data cleaned: 130 rows remain
+2025-10-01 21:55:07,236 INFO Lag features created: (1, 3, 5, 10)
+2025-10-01 21:55:07,238 INFO Return features created
+2025-10-01 21:55:07,239 INFO Volatility features created
+2025-10-01 21:55:07,240 INFO Final feature set assembled: 86 rows, 17 cols
+2025-10-01 21:55:07,240 INFO Engineered features: (86, 17)
+2025-10-01 21:55:07,313 INFO Model trained, test R2: -0.053
+2025-10-01 21:55:14,416 INFO Starting analysis: RCOM.BO (linear_regression, 1y)
+2025-10-01 21:55:14,417 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 21:55:14,419 INFO Using cached data for RCOM.BO
+2025-10-01 21:55:14,419 INFO Collected 130 rows
+2025-10-01 21:55:14,420 INFO Data cleaned: 130 rows remain
+2025-10-01 21:55:14,422 INFO Lag features created: (1, 3, 5, 10)
+2025-10-01 21:55:14,424 INFO Return features created
+2025-10-01 21:55:14,425 INFO Volatility features created
+2025-10-01 21:55:14,426 INFO Final feature set assembled: 86 rows, 17 cols
+2025-10-01 21:55:14,426 INFO Engineered features: (86, 17)
+2025-10-01 21:55:14,432 INFO Model trained, test R2: -1.065
+2025-10-01 21:55:20,138 INFO Starting analysis: RCOM.BO (random_forest, 1y)
+2025-10-01 21:55:20,139 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 21:55:20,141 INFO Using cached data for RCOM.BO
+2025-10-01 21:55:20,141 INFO Collected 130 rows
+2025-10-01 21:55:20,142 INFO Data cleaned: 130 rows remain
+2025-10-01 21:55:20,145 INFO Lag features created: (1, 3, 5, 10)
+2025-10-01 21:55:20,146 INFO Return features created
+2025-10-01 21:55:20,148 INFO Volatility features created
+2025-10-01 21:55:20,148 INFO Final feature set assembled: 86 rows, 17 cols
+2025-10-01 21:55:20,148 INFO Engineered features: (86, 17)
+2025-10-01 21:55:20,229 INFO Model trained, test R2: -0.053
+2025-10-01 22:12:56,670 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:12:56,674 INFO Using cached data for AAPL
+2025-10-01 22:12:56,674 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:12:56,676 INFO Fetching 5d data for MSFT
+2025-10-01 22:12:57,410 INFO Cached 5 records for MSFT
+2025-10-01 22:12:57,411 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:12:57,413 INFO Fetching 5d data for GOOGL
+2025-10-01 22:12:57,524 INFO Cached 5 records for GOOGL
+2025-10-01 22:13:12,967 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:13:12,971 INFO Using cached data for AAPL
+2025-10-01 22:13:12,972 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:13:12,973 INFO Using cached data for MSFT
+2025-10-01 22:13:12,973 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:13:12,975 INFO Using cached data for GOOGL
+2025-10-01 22:13:12,977 INFO Starting detailed analysis: AAPL (random_forest, 1y)
+2025-10-01 22:13:12,978 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:13:12,980 INFO Using cached data for AAPL
+2025-10-01 22:13:12,980 INFO Collected 251 rows for AAPL
+2025-10-01 22:13:12,981 INFO Data cleaned: 251 rows remain
+2025-10-01 22:13:12,984 INFO Lag features created: (1, 3, 5, 10)
+2025-10-01 22:13:12,985 INFO Return features created
+2025-10-01 22:13:12,986 INFO Volatility features created
+2025-10-01 22:13:12,987 INFO Final feature set assembled: 207 rows, 17 cols
+2025-10-01 22:13:12,987 INFO Engineered features: (207, 17)
+2025-10-01 22:13:13,088 INFO Model trained, test R2: 0.868
+2025-10-01 22:13:13,273 INFO Analysis completed successfully for AAPL
+2025-10-01 22:14:13,169 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:14:13,171 INFO Using cached data for AAPL
+2025-10-01 22:14:13,171 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:14:13,172 INFO Using cached data for MSFT
+2025-10-01 22:14:13,173 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:14:13,174 INFO Using cached data for GOOGL
+2025-10-01 22:14:18,923 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:14:18,925 INFO Fetching 5d data for 0700.HK
+2025-10-01 22:14:19,158 INFO Cached 4 records for 0700.HK
+2025-10-01 22:14:19,158 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:14:19,159 INFO Fetching 5d data for 7203.T
+2025-10-01 22:14:19,384 INFO Cached 4 records for 7203.T
+2025-10-01 22:14:19,384 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:14:19,386 INFO Fetching 5d data for BABA
+2025-10-01 22:14:19,552 INFO Cached 5 records for BABA
+2025-10-01 22:15:28,386 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:15:28,388 INFO Using cached data for 0700.HK
+2025-10-01 22:15:28,388 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:15:28,389 INFO Using cached data for 7203.T
+2025-10-01 22:15:28,390 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:15:28,391 INFO Using cached data for BABA
+2025-10-01 22:15:56,175 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:15:56,179 INFO Using cached data for 0700.HK
+2025-10-01 22:15:56,180 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:15:56,182 INFO Using cached data for 7203.T
+2025-10-01 22:15:59,374 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:15:59,376 INFO Using cached data for 0700.HK
+2025-10-01 22:15:59,377 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:15:59,378 INFO Using cached data for 7203.T
+2025-10-01 22:15:59,379 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:15:59,380 INFO Using cached data for BABA
+2025-10-01 22:16:04,331 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:04,332 INFO Fetching 5d data for NESN.SW
+2025-10-01 22:16:04,505 INFO Cached 4 records for NESN.SW
+2025-10-01 22:16:04,505 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:04,506 INFO Fetching 5d data for SAP.DE
+2025-10-01 22:16:04,733 INFO Cached 3 records for SAP.DE
+2025-10-01 22:16:04,734 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:04,736 INFO Fetching 5d data for RDSA.AS
+2025-10-01 22:16:05,489 ERROR $RDSA.AS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-01 22:16:05,489 ERROR Error fetching data for RDSA.AS: No data for RDSA.AS
+2025-10-01 22:16:27,153 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:27,155 INFO Using cached data for NESN.SW
+2025-10-01 22:16:27,156 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:27,157 INFO Using cached data for SAP.DE
+2025-10-01 22:16:27,158 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:27,159 INFO Fetching 5d data for RDSA.AS
+2025-10-01 22:16:27,331 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:27,332 INFO Using cached data for NESN.SW
+2025-10-01 22:16:27,333 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:27,334 INFO Using cached data for SAP.DE
+2025-10-01 22:16:27,335 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:27,336 INFO Fetching 5d data for RDSA.AS
+2025-10-01 22:16:27,811 ERROR $RDSA.AS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-01 22:16:27,812 ERROR Error fetching data for RDSA.AS: No data for RDSA.AS
+2025-10-01 22:16:27,872 ERROR $RDSA.AS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-01 22:16:27,873 ERROR Error fetching data for RDSA.AS: No data for RDSA.AS
+2025-10-01 22:16:27,875 INFO Starting detailed analysis: NESN.SW (random_forest, 1y)
+2025-10-01 22:16:27,877 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:27,879 INFO Using cached data for NESN.SW
+2025-10-01 22:16:27,879 INFO Collected 4 rows for NESN.SW
+2025-10-01 22:16:27,880 INFO Data cleaned: 4 rows remain
+2025-10-01 22:16:27,882 INFO Lag features created: (1, 3, 5, 10)
+2025-10-01 22:16:27,883 INFO Return features created
+2025-10-01 22:16:27,884 INFO Volatility features created
+2025-10-01 22:16:27,884 INFO Final feature set assembled: 0 rows, 17 cols
+2025-10-01 22:16:27,884 ERROR Feature engineering failed: Feature engineering produced no data
+2025-10-01 22:16:28,379 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:28,381 INFO Using cached data for NESN.SW
+2025-10-01 22:16:28,381 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:28,382 INFO Using cached data for SAP.DE
+2025-10-01 22:16:28,382 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:28,383 INFO Fetching 5d data for RDSA.AS
+2025-10-01 22:16:28,659 ERROR $RDSA.AS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-01 22:16:28,660 ERROR Error fetching data for RDSA.AS: No data for RDSA.AS
+2025-10-01 22:16:43,309 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:43,313 INFO Using cached data for NESN.SW
+2025-10-01 22:16:43,313 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:43,315 INFO Using cached data for SAP.DE
+2025-10-01 22:16:43,315 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:43,316 INFO Fetching 5d data for RDSA.AS
+2025-10-01 22:16:43,554 ERROR $RDSA.AS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-01 22:16:43,554 ERROR Error fetching data for RDSA.AS: No data for RDSA.AS
+2025-10-01 22:16:45,664 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:45,666 INFO Using cached data for NESN.SW
+2025-10-01 22:16:45,666 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:45,668 INFO Using cached data for SAP.DE
+2025-10-01 22:16:45,668 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:45,669 INFO Fetching 5d data for RDSA.AS
+2025-10-01 22:16:45,918 ERROR $RDSA.AS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-01 22:16:45,919 ERROR Error fetching data for RDSA.AS: No data for RDSA.AS
+2025-10-01 22:16:45,921 INFO Starting detailed analysis: SAP.DE (random_forest, 1y)
+2025-10-01 22:16:45,922 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:16:45,924 INFO Using cached data for SAP.DE
+2025-10-01 22:16:45,924 INFO Collected 3 rows for SAP.DE
+2025-10-01 22:16:45,925 INFO Data cleaned: 3 rows remain
+2025-10-01 22:16:45,927 INFO Lag features created: (1, 3, 5, 10)
+2025-10-01 22:16:45,928 INFO Return features created
+2025-10-01 22:16:45,929 INFO Volatility features created
+2025-10-01 22:16:45,929 INFO Final feature set assembled: 0 rows, 17 cols
+2025-10-01 22:16:45,929 ERROR Feature engineering failed: Feature engineering produced no data
+2025-10-01 22:17:28,386 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:17:28,388 INFO Using cached data for NESN.SW
+2025-10-01 22:17:28,388 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:17:28,390 INFO Using cached data for SAP.DE
+2025-10-01 22:17:28,390 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:17:28,391 INFO Fetching 5d data for RDSA.AS
+2025-10-01 22:17:28,630 ERROR $RDSA.AS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-01 22:17:28,630 ERROR Error fetching data for RDSA.AS: No data for RDSA.AS
+2025-10-01 22:18:29,120 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:18:29,121 INFO Using cached data for NESN.SW
+2025-10-01 22:18:29,122 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:18:29,123 INFO Using cached data for SAP.DE
+2025-10-01 22:18:29,124 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:18:29,125 INFO Fetching 5d data for RDSA.AS
+2025-10-01 22:18:29,369 ERROR $RDSA.AS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-01 22:18:29,370 ERROR Error fetching data for RDSA.AS: No data for RDSA.AS
+2025-10-01 22:19:29,123 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:19:29,131 INFO Using cached data for NESN.SW
+2025-10-01 22:19:29,132 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:19:29,133 INFO Using cached data for SAP.DE
+2025-10-01 22:19:29,134 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:19:29,134 INFO Fetching 5d data for RDSA.AS
+2025-10-01 22:19:29,382 ERROR $RDSA.AS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-01 22:19:29,382 ERROR Error fetching data for RDSA.AS: No data for RDSA.AS
+2025-10-01 22:20:29,122 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:20:29,123 INFO Using cached data for NESN.SW
+2025-10-01 22:20:29,124 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:20:29,125 INFO Using cached data for SAP.DE
+2025-10-01 22:20:29,126 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:20:29,126 INFO Fetching 5d data for RDSA.AS
+2025-10-01 22:20:29,355 ERROR $RDSA.AS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-01 22:20:29,356 ERROR Error fetching data for RDSA.AS: No data for RDSA.AS
+2025-10-01 22:21:29,120 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:21:29,122 INFO Using cached data for NESN.SW
+2025-10-01 22:21:29,122 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:21:29,124 INFO Using cached data for SAP.DE
+2025-10-01 22:21:29,124 INFO Database initialized at /home/prasanth/projects/stock_predictor/data/models/stocks.db
+2025-10-01 22:21:29,125 INFO Fetching 5d data for RDSA.AS
+2025-10-01 22:21:29,380 ERROR $RDSA.AS: possibly delisted; no price data found  (period=5d) (Yahoo error = "No data found, symbol may be delisted")
+2025-10-01 22:21:29,380 ERROR Error fetching data for RDSA.AS: No data for RDSA.AS

@@ -8,4 +8,7 @@ streamlit>=1.25.0      # Web interface
 plotly>=5.0.0          # Interactive charts
 requests>=2.28.0       # HTTP requests
 ta>=0.10.0             # Technical analysis indicators
+pytest>=7.0.0
+newsapi-python>=0.2.0
+streamlit-autorefresh>=0.1.0
 
