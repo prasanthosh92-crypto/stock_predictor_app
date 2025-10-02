@@ -11,4 +11,4 @@ ta>=0.10.0             # Technical analysis indicators
 pytest>=7.0.0
 newsapi-python>=0.2.0
 streamlit-autorefresh>=0.1.0
-
+tensorflow>=2.0.0
