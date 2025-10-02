@@ -8,6 +8,8 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 from tensorflow.keras.optimizers import Adam
 
+from statsmodels.tsa.arima.model import ARIMA
+
 class StockPredictor:
     def __init__(self, model_type="random_forest", lstm_seq_len=10):
         self.model_type = model_type
@@ -20,10 +22,13 @@ class StockPredictor:
             self.model = LinearRegression()
         elif model_type == "lstm":
             self.model = None
+        elif model_type == "arima":
+            self.model = None
         else:
             raise ValueError("Unsupported model type")
 
     def _prepare(self, df, target_days=1):
+        df = df.reset_index(drop=True)
         features = ["Open", "High", "Low", "Close", "Volume"]
         if self.model_type == "lstm":
             arr = df[features].values
@@ -39,6 +44,9 @@ class StockPredictor:
             X_reshaped = X.reshape(-1, X.shape[-1])
             X_scaled = self.scaler.fit_transform(X_reshaped).reshape(X.shape)
             return X_scaled, y
+        elif self.model_type == "arima":
+            # ARIMA needs only close prices
+            return df["Close"].values, None
         else:
             X = df[features]
             y = df["Close"].shift(-target_days)
@@ -47,9 +55,15 @@ class StockPredictor:
 
     def train(self, df, test_size=0.2, target_days=1):
         X, y = self._prepare(df, target_days=target_days)
-        if len(X) == 0 or len(y) == 0:
-            raise ValueError("Not enough data for training")
-        if self.model_type == "lstm":
+        if self.model_type == "arima":
+            # Fit ARIMA model to entire close price series
+            self.model = ARIMA(X, order=(5,1,0)).fit()
+            self.is_trained = True
+            # ARIMA metrics not comparable
+            return {k: "-" for k in ["train_mse","test_mse","train_mae","test_mae","train_r2","test_r2"]}
+        elif self.model_type == "lstm":
+            if len(X) == 0 or len(y) == 0:
+                raise ValueError("Not enough data for training")
             split = int(len(X) * (1 - test_size))
             X_train, X_test = X[:split], X[split:]
             y_train, y_test = y[:split], y[split:]
@@ -64,6 +78,8 @@ class StockPredictor:
             train_pred = model.predict(X_train).flatten()
             test_pred = model.predict(X_test).flatten()
         else:
+            if len(X) == 0 or len(y) == 0:
+                raise ValueError("Not enough data for training")
             split = int(len(X) * (1 - test_size))
             X_train, X_test = X.iloc[:split], X.iloc[split:]
             y_train, y_test = y.iloc[:split], y.iloc[split:]
@@ -73,21 +89,25 @@ class StockPredictor:
             self.is_trained = True
             train_pred = self.model.predict(X_train_s)
             test_pred = self.model.predict(X_test_s)
-        return {
-            "train_mse": mean_squared_error(y_train, train_pred),
-            "test_mse": mean_squared_error(y_test, test_pred),
-            "train_mae": mean_absolute_error(y_train, train_pred),
-            "test_mae": mean_absolute_error(y_test, test_pred),
-            "train_r2": r2_score(y_train, train_pred),
-            "test_r2": r2_score(y_test, test_pred),
-        }
+        if self.model_type != "arima":
+            return {
+                "train_mse": mean_squared_error(y_train, train_pred),
+                "test_mse": mean_squared_error(y_test, test_pred),
+                "train_mae": mean_absolute_error(y_train, train_pred),
+                "test_mae": mean_absolute_error(y_test, test_pred),
+                "train_r2": r2_score(y_train, train_pred),
+                "test_r2": r2_score(y_test, test_pred),
+            }
 
     def predict(self, df, target_days=1):
         if not self.is_trained:
             raise RuntimeError("Model not trained")
         features = ["Open", "High", "Low", "Close", "Volume"]
         current = df["Close"].iloc[-1]
-        if self.model_type == "lstm":
+        if self.model_type == "arima":
+            forecast = self.model.forecast(steps=target_days)
+            pred = forecast[-1]
+        elif self.model_type == "lstm":
             arr = df[features].values
             if len(arr) < self.lstm_seq_len:
                 raise ValueError("Not enough data for LSTM prediction")
