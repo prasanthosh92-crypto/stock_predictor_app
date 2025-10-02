@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import plotly.graph_objects as go
 
-from predictor import StockPredictor
+from stock_predictor.predictor import StockPredictor
 
 st.set_page_config(page_title="Stock Predictor", layout="wide")
 st.title("📈 Personal Stock Forecasting Tool")
